@@ -7,10 +7,12 @@ public class Main {
         Scanner sc= new Scanner(System.in);
         int k=sc.nextInt();
         System.out.println(k);
-        String shapeString=sc.nextLine();
+        // String shapeString=sc.nextLine();34
 
-        Circle cir=new Circle();
+        Shape cir=new Circle();
+        Shape rec=new Rectangle();
         System.out.println(cir.getDescription());
+        System.out.println(rec.getDescription());
         
     }
 }

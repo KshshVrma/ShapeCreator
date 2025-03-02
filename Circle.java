@@ -1,14 +1,15 @@
 package shape;
 
-public class Circle {
-    private String description;
+public class Circle extends Shape{
+    // private String description;
     public Circle(){
-        this.description="this shape is round";
+        super("this shape is round");
+        // this.description="this shape is round";
 
     }
-
-    public String getDescription(){
-        return description;
-    }
+// @Override
+//     public String getDescription(){
+//         return description;
+//     }
 
 }
