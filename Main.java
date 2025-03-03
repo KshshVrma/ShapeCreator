@@ -2,17 +2,21 @@ package shape;
 
 import java.util.Scanner;
 public class Main {
-
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        int k=sc.nextInt();
+        String k=sc.nextLine();
         System.out.println(k);
         // String shapeString=sc.nextLine();34
 
-        Shape cir=new Circle();
-        Shape rec=new Rectangle();
-        System.out.println(cir.getDescription());
-        System.out.println(rec.getDescription());
+        Factory fac=new Factory();
+        Shape one=fac.getShape(k);
+        System.out.println(one.getDescription());
+
+        String l=sc.nextLine();
+        System.out.println(l);
+        Shape two=fac.getShape(l);
+       
+        System.out.println(two.getDescription());
         
     }
 }
